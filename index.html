@@ -617,6 +617,7 @@
         <div class="row no-gutters block-9">
             <div class="col-md-6 order-md-last d-flex">
                 <form name="contact" method="POST" data-netlify="true" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
+                    <input type="hidden" name="form-name" value="contact">
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
@@ -633,6 +634,7 @@
                         <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
                     </div>
                 </form>
+                
                 
                 <!-- نافذة منبثقة (Popup) لرسالة النجاح -->
                 <div id="popup-message" class="popup-message" style="display: none;">
