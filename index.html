@@ -636,7 +636,6 @@
                 </form>
                 
                 
-                <!-- نافذة منبثقة (Popup) لرسالة النجاح -->
                 <div id="popup-message" class="popup-message" style="display: none;">
                     <div class="popup-content">
                         <p>Message sent successfully. We will contact you as soon as possible</p>
@@ -649,7 +648,6 @@
         </div>
         
         <style>
-            /* تصميم النافذة المنبثقة */
             .popup-message {
                 position: fixed;
                 top: 50%;
@@ -666,7 +664,7 @@
             }
             
             .popup-content {
-                background-color: #000000; /* اللون الأخضر للنجاح */
+                background-color: #000000; 
                 padding: 20px;
                 border-radius: 5px;
             }
@@ -758,15 +756,14 @@
     </div>
 </footer>
 <script>
-    // إضافة رسالة النجاح بعد إرسال النموذج
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();  // منع الإرسال التقليدي
 
-        // عرض رسالة النجاح
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();  
+
+
         var successMessage = document.getElementById('popup-message');
         successMessage.style.display = 'block';
 
-        // إخفاء رسالة النجاح بعد 4 ثوانٍ
         setTimeout(function() {
             successMessage.style.display = 'none';
         }, 4000);
